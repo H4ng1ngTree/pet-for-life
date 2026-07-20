@@ -109,7 +109,7 @@ h1 {
 
 .subtitle {
   max-width: 760px;
-  color: rgba(255, 250, 242, 0.9);
+  color: #f4d6b8;
   font-size: clamp(21px, 3vw, 34px);
   line-height: 1.45;
 }
@@ -202,6 +202,14 @@ li {
 
 .stat-grid article {
   border-top: 4px solid var(--accent);
+}
+
+.mini-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mini-grid article {
+  min-height: 190px;
 }
 
 .stat-grid strong,
