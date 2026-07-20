@@ -133,6 +133,7 @@ h1 {
 
 .opening-scene p {
   margin-bottom: 0;
+  color: #f4d6b8;
 }
 
 .section {
@@ -499,6 +500,126 @@ blockquote p {
   font-weight: 700;
 }
 
+.wordcloud-figure {
+  width: min(1080px, 100%);
+  margin: 42px auto;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 18px 60px rgba(77, 49, 34, 0.06);
+}
+
+.wordcloud-figure figcaption {
+  margin-bottom: 24px;
+  color: rgba(105, 91, 81, 0.82);
+  font-size: 15px;
+}
+
+.wordcloud {
+  position: relative;
+  min-height: 430px;
+  padding: clamp(18px, 4vw, 46px);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(244, 228, 207, 0.95), rgba(255, 250, 240, 0.72) 62%, rgba(241, 227, 208, 0.5));
+  overflow: hidden;
+}
+
+.wordcloud span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: block;
+  white-space: nowrap;
+  color: var(--accent-dark);
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 0 8px 22px rgba(77, 49, 34, 0.08);
+}
+
+.word-xl {
+  font-size: clamp(46px, 7vw, 78px);
+  left: 50%;
+  top: 29%;
+  color: #9b5c3d;
+}
+
+.word-lg {
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+.word-lg:nth-of-type(2) {
+  left: 31%;
+  top: 52%;
+  color: #683a2a;
+}
+
+.word-lg:nth-of-type(3) {
+  left: 72%;
+  top: 50%;
+  color: #b87956;
+}
+
+.word-md {
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.word-md:nth-of-type(4) {
+  left: 42%;
+  top: 70%;
+  color: #d09b6b;
+}
+
+.word-md:nth-of-type(5) {
+  left: 68%;
+  top: 70%;
+  color: #8d6a54;
+}
+
+.word-md:nth-of-type(6) {
+  left: 53%;
+  top: 86%;
+  color: #c07d4f;
+}
+
+.word-sm {
+  font-size: clamp(23px, 3vw, 34px);
+  color: #9b5c3d;
+}
+
+.word-sm:nth-of-type(7) {
+  left: 83%;
+  top: 79%;
+}
+
+.word-sm:nth-of-type(8) {
+  left: 18%;
+  top: 78%;
+  color: #683a2a;
+}
+
+.word-xs {
+  font-size: clamp(19px, 2.4vw, 28px);
+  color: #b87956;
+}
+
+.word-xs:nth-of-type(9) {
+  left: 24%;
+  top: 26%;
+}
+
+.word-xs:nth-of-type(10) {
+  left: 78%;
+  top: 26%;
+  color: #d09b6b;
+}
+
+.wordcloud-note {
+  margin: 18px 0 0;
+  color: rgba(105, 91, 81, 0.78);
+  font-size: 14px;
+}
+
 .dark {
   background: var(--dark);
   color: #fff8ec;
@@ -646,5 +767,16 @@ blockquote p {
 
   .footer {
     flex-direction: column;
+  }
+
+  .wordcloud {
+    min-height: 520px;
+  }
+
+  .wordcloud span {
+    position: static;
+    transform: none;
+    display: inline-block;
+    margin: 8px;
   }
 }
